@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Meta Tags SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahim Accessoires — Collier Cœur Doré | Acier Inoxydable Premium</title>
+    <meta name="description" content="Collier cœur doré en acier inoxydable — durable, hypoallergénique et élégant. Livraison rapide, paiement à la livraison. Offrez un bijou qui dure.">
+    <meta name="keywords" content="collier cœur doré, acier inoxydable, bijoux premium, collier hypoallergénique, Rahim Accessoires">
+    <meta name="author" content="Rahim Accessoires">
+    <meta property="og:title" content="Rahim Accessoires — Collier Cœur Doré | Acier Inoxydable Premium">
+    <meta property="og:description" content="Collier cœur doré en acier inoxydable — durable, hypoallergénique et élégant.">
+    <meta property="og:type" content="product">
+    <meta property="og:image" content="img/img1.jpg">
+    <meta property="og:url" content="https://rahimaccessoires.dz">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Collier Cœur Doré | Rahim Accessoires">
+    <meta name="twitter:description" content="Acier inoxydable premium, hypoallergénique et élégant.">
+    <link rel="canonical" href="https://rahimaccessoires.dz">
+    
+    <!-- Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #d4af37;
+            --dark-color: #1a1a1a;
+            --light-color: #f8f8f8;
+            --text-color: #333;
+            --accent-color: #e91e63;
+            --border-color: #ddd;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+            color: white;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo:hover {
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+        
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .desktop-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .desktop-nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(212, 175, 55, 0.15);
+            transition: left 0.3s;
+            z-index: -1;
+        }
+        
+        .desktop-nav a:hover::before {
+            left: 0;
+        }
+        
+        .desktop-nav a:hover {
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            padding: 8px;
+            z-index: 1001;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        
+        .hamburger:hover {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2.5px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+            background-color: var(--primary-color);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+            background-color: var(--primary-color);
+        }
+
+        /* Slide Menu */
+        .slide-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 75%;
+            max-width: 280px;
+            height: 100vh;
+            background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
+            z-index: 999;
+            transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            padding-top: 70px;
+            box-shadow: 4px 0 20px rgba(0,0,0,0.4);
+            overflow-y: auto;
+            border-right: 2px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .slide-menu.active {
+            left: 0;
+        }
+
+        .slide-menu a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.2rem;
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            font-weight: 500;
+            position: relative;
+            margin: 0.3rem 0.8rem;
+            border-radius: 6px;
+        }
+        
+        .slide-menu a::before {
+            content: '▸';
+            margin-right: 0.8rem;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .slide-menu a:hover {
+            background-color: rgba(212, 175, 55, 0.15);
+            color: var(--primary-color);
+            padding-left: 1.5rem;
+            border-left-color: var(--primary-color);
+        }
+        
+        .slide-menu a:hover::before {
+            margin-right: 1rem;
+        }
+
+        /* Overlay pour fermer le menu */
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            z-index: 998;
+            transition: background 0.3s;
+            display: none;
+            pointer-events: none;
+        }
+
+        .menu-overlay.active {
+            background: rgba(0, 0, 0, 0.5);
+            display: block;
+            pointer-events: all;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero-text .brand {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: #ddd;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .cta-button:hover {
+            background-color: #e6c200;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        .hero-video {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+            background-color: #000;
+            aspect-ratio: 16 / 9;
+            max-height: 500px;
+        }
+        
+        .hero-video video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            background-color: #000;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(212, 175, 55, 0.9);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            z-index: 10;
+        }
+        
+        .video-overlay:hover {
+            background: rgba(212, 175, 55, 1);
+            transform: translate(-50%, -50%) scale(1.15);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.6);
+        }
+        
+        .video-overlay::after {
+            content: '▶';
+            color: var(--dark-color);
+            font-size: 1.8rem;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        
+        /* Avantages Section */
+        .benefits {
+            padding: 4rem 0;
+            background-color: var(--light-color);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--dark-color);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.7rem;
+            color: var(--dark-color);
+        }
+        
+        .benefit-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        /* Présentation Produit */
+        .product-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .product-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .product-images {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .main-image {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .main-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .gallery-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.8rem;
+        }
+        
+        .thumbnail {
+            cursor: pointer;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        
+        .product-info h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            line-height: 1.3;
+        }
+        
+        .product-description {
+            color: #666;
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .pricing-section {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .price-display {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-normal {
+            font-size: 1.2rem;
+            color: #999;
+            text-decoration: line-through;
+        }
+        
+        .price-promo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .discount-badge {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .stock-info {
+            color: #d32f2f;
+            font-weight: bold;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .features-list {
+            margin-bottom: 2rem;
+        }
+        
+        .features-list h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+        
+        .features-list li {
+            list-style: none;
+            padding: 0.7rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .add-to-cart {
+            width: 100%;
+            padding: 1.2rem;
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .add-to-cart:hover {
+            background-color: #e6c200;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        /* Galerie Section */
+        .gallery-section {
+            padding: 4rem 0;
+            background: var(--light-color);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Pourquoi choisir */
+        .why-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .why-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .why-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+        
+        .why-content p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        /* Témoignages */
+        .testimonials {
+            padding: 4rem 0;
+            background: var(--light-color);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .stars {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .testimonial-text {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--dark-color);
+        }
+        
+        /* FAQ */
+        .faq-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background: var(--light-color);
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        .faq-question:hover {
+            background-color: #eee;
+        }
+        
+        .faq-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 1.5rem;
+            background: white;
+            color: #666;
+            line-height: 1.7;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #555;
+        }
+        
+        .footer-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(212, 175, 55, 0.2);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary-color);
+            color: var(--dark-color);
+        }
+        
+        /* Formulaire de Commande */
+        .checkout-section {
+            padding: 4rem 0;
+            background: var(--light-color);
+        }
+        
+        .checkout-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .checkout-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--dark-color);
+        }
+        
+        .order-summary {
+            background: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .summary-item:last-child {
+            margin-bottom: 0;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .form-section {
+            margin-bottom: 2rem;
+        }
+        
+        .form-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .form-row.full {
+            grid-template-columns: 1fr;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.9rem;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+            font-family: inherit;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .form-check input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.8rem;
+            cursor: pointer;
+        }
+        
+        .form-check label {
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        
+        .payment-method {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .payment-option {
+            border: 2px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .payment-option input[type="radio"] {
+            display: none;
+        }
+        
+        .payment-option input[type="radio"]:checked + label {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .payment-option:has(input[type="radio"]:checked) {
+            border-color: var(--primary-color);
+            background: rgba(212, 175, 55, 0.05);
+        }
+        
+        .payment-option label {
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 1.3rem;
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .submit-btn:hover {
+            background-color: #e6c200;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        .submit-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        
+        .success-message {
+            display: none;
+            background: #4caf50;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        .error-message {
+            background: #f44336;
+            color: white;
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            display: none;
+        }
+        
+        .error-message.show {
+            display: block;
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .product-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .desktop-nav {
+                display: none !important;
+            }
+
+            .hamburger {
+                display: flex !important;
+            }
+            
+            .gallery-thumbnails {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .price-promo {
+                font-size: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">✨ Rahim Accessoires</div>
+                <nav class="desktop-nav">
+                    <a href="#produit">Produit</a>
+                    <a href="#avantages">Avantages</a>
+                    <a href="#avis">Avis</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slide Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="slide-menu" id="slideMenu">
+        <a href="#produit">Produit</a>
+        <a href="#avantages">Avantages</a>
+        <a href="#avis">Avis</a>
+        <a href="#faq">FAQ</a>
+        <a href="#commande" style="color: var(--primary-color); font-weight: bold;">Commander</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="brand">Rahim Accessoires</div>
+                    <h1>Collier Cœur Doré — Acier inoxydable premium</h1>
+                    <p class="hero-subtitle">Un bijou élégant, résistant et intemporel — conçu pour durer et sublimer chaque tenue.</p>
+                    <a href="#panier" class="cta-button">Acheter maintenant</a>
+                </div>
+                <div class="hero-video">
+                    <video id="heroVideo" autoplay muted playsinline poster="img/img1.jpg" controls>
+                        <source src="img/video principal.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture vidéo HTML5.
+                    </video>
+                    <div class="video-overlay" id="videoOverlay" title="Cliquez pour lire la vidéo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages Section -->
+    <section id="avantages" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Pourquoi vous allez l'adorer</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Acier inoxydable de qualité</h3>
+                    <p>Ne rouille pas, ne ternit pas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Hypoallergénique</h3>
+                    <p>Convient aux peaux sensibles.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👑</div>
+                    <h3>Finition dorée brillante</h3>
+                    <p>Look premium sans le prix.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Livraison rapide & Paiement à la livraison</h3>
+                    <p>Simple et sécurisé.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="produit" class="product-section">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="img/img1.jpg" alt="Collier Cœur Doré - Vue principale">
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <div class="thumbnail active" onclick="changeImage(this)">
+                            <img src="img/img1.jpg" alt="Vue principale">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage(this)">
+                            <img src="img/img2.jpg" alt="Vue alternative 1">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage(this)">
+                            <img src="img/img3.jpg" alt="Vue alternative 2">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage(this)">
+                            <img src="img/img4.jpg" alt="Vue alternative 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h2>Un cœur qui ne s'efface pas</h2>
+                    <p class="product-description">
+                        Ce collier en acier inoxydable doré combine design délicat et solidité. Sa finition polie apporte une brillance qui tient dans le temps, tandis que sa forme cœur romantique en fait le cadeau parfait. Léger et confortable, il s'adapte aussi bien à un look casual qu'à une tenue plus soignée.
+                    </p>
+
+                    <div class="pricing-section">
+                        <div class="price-display">
+                            <span class="price-normal">3 500 DZD</span>
+                            <span class="price-promo">2 790 DZD</span>
+                            <span class="discount-badge">-20%</span>
+                        </div>
+                        <div class="stock-info">⚠️ Stock limité — Commandez maintenant!</div>
+                    </div>
+
+                    <div class="features-list">
+                        <h3>Caractéristiques</h3>
+                        <ul>
+                            <li><strong>Matériaux :</strong> Acier inoxydable 316L, placage doré durable</li>
+                            <li><strong>Longueur chaîne :</strong> 40–45 cm (ajustable)</li>
+                            <li><strong>Résistance :</strong> Anti-tarnish, résistant à l'eau</li>
+                            <li><strong>Garantie :</strong> Retour sous 14 jours — satisfaction garantie</li>
+                        </ul>
+                    </div>
+
+                    <button id="panier" class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Photos réelles du produit</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/img5.jpg" alt="Collier en studio - détails">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/img6.jpg" alt="Collier porté - mise en situation">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/img7.jpg" alt="Collier - packshot détaillé">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi Rahim Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="why-content">
+                <h2>Pourquoi choisir Rahim Accessoires ?</h2>
+                <p>
+                    Rahim Accessoires propose des bijoux en acier inoxydable de haute qualité, spécialement conçus pour durer sans perdre leur éclat. Nos pièces sont testées pour la résistance quotidienne et pour convenir aux peaux sensibles. Chaque collier est sélectionné avec soin pour offrir le meilleur rapport qualité-prix sans compromettre l'élégance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Section -->
+    <section id="avis" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce que nos clients disent</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"J'adore ce collier — il ne noircit pas et il est très élégant !"</p>
+                    <p class="testimonial-author">— Lina</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"La livraison a été rapide et le produit correspond exactement aux photos."</p>
+                    <p class="testimonial-author">— Amine</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Parfait pour offrir, la finition est belle."</p>
+                    <p class="testimonial-author">— Salima</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions fréquentes</h2>
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Le collier noircit-il ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Non — acier inoxydable + placage durable. Évitez le contact prolongé avec des produits chimiques (parfum, lotion, etc.) pour conserver sa brillance plus longtemps. Un simple essuyage avec un chiffon doux suffit pour l'entretien.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Y a-t-il une garantie ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Oui — retour possible sous 14 jours si insatisfaction. Nous vous remboursons intégralement ou proposons un échange sans questions. Votre satisfaction est notre priorité !
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Le collier convient-il aux peaux sensibles ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolument ! L'acier inoxydable 316L est hypoallergénique et testé pour les peaux sensibles. De nombreux clients avec allergies au nickel le portent sans problème.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Quelle est la longueur de la chaîne ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        La chaîne mesure 40–45 cm et est ajustable. Elle s'adapte à tous les tours de cou grâce à une extension pratique à fermeture sécurisée.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de Commande -->
+    <section id="commande" class="checkout-section">
+        <div class="container">
+            <div class="checkout-container">
+                <h2 class="checkout-title">Finalisez votre commande</h2>
+                
+                <div id="successMessage" class="success-message">
+                    ✓ Commande soumise avec succès ! Nous vous contacterons sous peu.
+                </div>
+
+                <div class="order-summary">
+                    <div class="summary-item">
+                        <span>Collier Cœur Doré en acier inoxydable</span>
+                        <span>2 790 DZD</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Livraison</span>
+                        <span>Gratuite</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Total</span>
+                        <span>2 790 DZD</span>
+                    </div>
+                </div>
+
+                <form id="checkoutForm">
+                    <!-- Informations Personnelles -->
+                    <div class="form-section">
+                        <h3>Informations personnelles</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <div class="error-message" id="errorFirstName"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <div class="error-message" id="errorLastName"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message" id="errorEmail"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+213 XXX XX XX XX" required>
+                                <div class="error-message" id="errorPhone"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adresse de Livraison -->
+                    <div class="form-section">
+                        <h3>Adresse de livraison</h3>
+                        <div class="form-group form-row full">
+                            <label for="address">Adresse complète *</label>
+                            <input type="text" id="address" name="address" placeholder="Rue, numéro, étage..." required>
+                            <div class="error-message" id="errorAddress"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">Wilaya *</label>
+                                <select id="city" name="city" required>
+                                    <option value="">Sélectionnez une wilaya</option>
+                                    <option value="01 - Adrar">01 - Adrar</option>
+                                    <option value="02 - Chlef">02 - Chlef</option>
+                                    <option value="03 - Laghouat">03 - Laghouat</option>
+                                    <option value="04 - Oum El Bouaghi">04 - Oum El Bouaghi</option>
+                                    <option value="05 - Batna">05 - Batna</option>
+                                    <option value="06 - Béjaïa">06 - Béjaïa</option>
+                                    <option value="07 - Biskra">07 - Biskra</option>
+                                    <option value="08 - Béchar">08 - Béchar</option>
+                                    <option value="09 - Blida">09 - Blida</option>
+                                    <option value="10 - Boumerdès">10 - Boumerdès</option>
+                                    <option value="11 - El Tarf">11 - El Tarf</option>
+                                    <option value="12 - Annaba">12 - Annaba</option>
+                                    <option value="13 - Alger">13 - Alger</option>
+                                    <option value="14 - Tiaret">14 - Tiaret</option>
+                                    <option value="15 - Tlemcen">15 - Tlemcen</option>
+                                    <option value="16 - Tiaret">16 - Tiaret</option>
+                                    <option value="17 - Saïda">17 - Saïda</option>
+                                    <option value="18 - Skikda">18 - Skikda</option>
+                                    <option value="19 - Sidi Bel Abbès">19 - Sidi Bel Abbès</option>
+                                    <option value="20 - Jijel">20 - Jijel</option>
+                                    <option value="21 - Sétif">21 - Sétif</option>
+                                    <option value="22 - Saïda">22 - Saïda</option>
+                                    <option value="23 - Skikda">23 - Skikda</option>
+                                    <option value="24 - Souk Ahras">24 - Souk Ahras</option>
+                                    <option value="25 - Mostaganem">25 - Mostaganem</option>
+                                    <option value="26 - Mascara">26 - Mascara</option>
+                                    <option value="27 - Oran">27 - Oran</option>
+                                    <option value="28 - El Asnam">28 - El Asnam</option>
+                                    <option value="29 - Relizane">29 - Relizane</option>
+                                    <option value="30 - Constantine">30 - Constantine</option>
+                                    <option value="31 - Médéa">31 - Médéa</option>
+                                    <option value="32 - Ouled Djellal">32 - Ouled Djellal</option>
+                                    <option value="33 - El Bayad">33 - El Bayad</option>
+                                    <option value="34 - Tamanrasset">34 - Tamanrasset</option>
+                                    <option value="35 - Tébessa">35 - Tébessa</option>
+                                    <option value="36 - Flissou">36 - Flissou</option>
+                                    <option value="37 - Laghouat">37 - Laghouat</option>
+                                    <option value="38 - Khenchela">38 - Khenchela</option>
+                                    <option value="39 - Souk Ahras">39 - Souk Ahras</option>
+                                    <option value="40 - Kasserine">40 - Kasserine</option>
+                                    <option value="41 - Guelma">41 - Guelma</option>
+                                    <option value="42 - Mascara">42 - Mascara</option>
+                                    <option value="43 - Mostaganem">43 - Mostaganem</option>
+                                    <option value="44 - Oran">44 - Oran</option>
+                                    <option value="45 - Aïn Defla">45 - Aïn Defla</option>
+                                    <option value="46 - Bouira">46 - Bouira</option>
+                                    <option value="47 - Tamanrasset">47 - Tamanrasset</option>
+                                    <option value="48 - Illizi">48 - Illizi</option>
+                                    <option value="49 - Bordj Baji Mokhtar">49 - Bordj Baji Mokhtar</option>
+                                    <option value="50 - Ouargla">50 - Ouargla</option>
+                                    <option value="51 - Oran">51 - Oran</option>
+                                    <option value="52 - El Asnam">52 - El Asnam</option>
+                                    <option value="53 - Ghardaïa">53 - Ghardaïa</option>
+                                    <option value="54 - Relizane">54 - Relizane</option>
+                                    <option value="55 - Mila">55 - Mila</option>
+                                    <option value="56 - Aïn Témouchent">56 - Aïn Témouchent</option>
+                                    <option value="57 - Béni Abbès">57 - Béni Abbès</option>
+                                    <option value="58 - In Salah">58 - In Salah</option>
+                                    <option value="59 - In Guezzam">59 - In Guezzam</option>
+                                    <option value="60 - Touggourt">60 - Touggourt</option>
+                                    <option value="61 - Djanet">61 - Djanet</option>
+                                    <option value="62 - El Oued">62 - El Oued</option>
+                                    <option value="63 - Khenchela">63 - Khenchela</option>
+                                    <option value="64 - Souk Ahras">64 - Souk Ahras</option>
+                                    <option value="65 - Tébessa">65 - Tébessa</option>
+                                    <option value="66 - Guelma">66 - Guelma</option>
+                                    <option value="67 - Jijel">67 - Jijel</option>
+                                    <option value="68 - Sétif">68 - Sétif</option>
+                                    <option value="69 - Hoggar">69 - Hoggar</option>
+                                </select>
+                                <div class="error-message" id="errorCity"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="zipcode">Code postal (optionnel)</label>
+                                <input type="text" id="zipcode" name="zipcode">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Méthode de Paiement -->
+                    <div class="form-section">
+                        <h3>Méthode de paiement *</h3>
+                        <div class="payment-method">
+                            <div class="payment-option">
+                                <input type="radio" id="paymentCOD" name="payment" value="Paiement à la livraison" checked>
+                                <label for="paymentCOD">Paiement à la livraison</label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="paymentCCP" name="payment" value="CCP/Virement">
+                                <label for="paymentCCP">CCP/Virement</label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="paymentWallet" name="payment" value="E-wallet">
+                                <label for="paymentWallet">E-wallet</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notes de Commande -->
+                    <div class="form-section">
+                        <label for="notes">Notes spéciales (optionnel)</label>
+                        <textarea id="notes" name="notes" placeholder="Informations supplémentaires pour votre commande..."></textarea>
+                    </div>
+
+                    <!-- Conditions d'acceptation -->
+                    <div class="form-check">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">J'accepte les conditions d'utilisation et la politique de retour</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Recevoir les actualités et offres spéciales de Rahim Accessoires</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Confirmer la commande - 2 790 DZD</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rahim Accessoires</h3>
+                    <p>Bijoux en acier inoxydable premium — Qualité, élégance et durabilité.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" title="Instagram">📱</a>
+                        <a href="https://facebook.com" title="Facebook">f</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 +213-782-376-957</p>
+                    <p>📧 contact@rahimaccessoires.dz</p>
+                    <p>⏰ Lundi-Vendredi : 9h-18h</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Informations</h3>
+                    <a href="#">Politique de retour</a>
+                    <a href="#">Livraison</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rahim Accessoires. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // ========== MENU HAMBURGER ==========
+        const hamburger = document.getElementById('hamburger');
+        const slideMenu = document.getElementById('slideMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        // Ouvrir/fermer le menu au clic sur le hamburger
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            slideMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        });
+
+        // Fermer le menu quand on clique sur le overlay
+        menuOverlay.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            slideMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+        });
+
+        // Fermer le menu quand on clique sur un lien
+        document.querySelectorAll('.slide-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                slideMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            });
+        });
+
+        // Fermer le menu si on redimensionne vers la version desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                slideMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            }
+        });
+
+        // ========== GESTION VIDÉO ==========
+        const heroVideo = document.getElementById('heroVideo');
+        const videoOverlay = document.getElementById('videoOverlay');
+
+        if (heroVideo && videoOverlay) {
+            // Afficher l'overlay au début ou quand la vidéo est en pause
+            heroVideo.addEventListener('pause', () => {
+                videoOverlay.style.display = 'flex';
+            });
+
+            // Masquer l'overlay quand la vidéo est en lecture
+            heroVideo.addEventListener('play', () => {
+                videoOverlay.style.display = 'none';
+            });
+
+            // Cliquer sur l'overlay pour lancer la vidéo
+            videoOverlay.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                if (heroVideo.paused) {
+                    // Unmute temporairement pour la lecture manuelle
+                    heroVideo.muted = false;
+                    heroVideo.play();
+                } else {
+                    heroVideo.pause();
+                }
+            });
+
+            // Double-click sur la vidéo pour pause/play
+            heroVideo.addEventListener('dblclick', () => {
+                if (heroVideo.paused) {
+                    heroVideo.play();
+                } else {
+                    heroVideo.pause();
+                }
+            });
+
+            // Au chargement initial, afficher l'overlay
+            if (heroVideo.paused) {
+                videoOverlay.style.display = 'flex';
+            }
+        }
+
+        // ========== GALERIE D'IMAGES ==========
+        function changeImage(thumbnail) {
+            // Supprimer la classe active de tous les thumbnails
+            document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+            
+            // Ajouter la classe active au thumbnail cliqué
+            thumbnail.classList.add('active');
+            
+            // Mettre à jour l'image principale
+            const imgSrc = thumbnail.querySelector('img').src;
+            document.getElementById('mainImage').src = imgSrc;
+        }
+
+        // ========== FAQ INTERACTIVE ==========
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            
+            // Fermer les autres items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Toggle l'item actuel
+            faqItem.classList.toggle('active');
+        }
+
+        // ========== NAVIGATION LISSE ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ========== BOUTONS ACHETER / AJOUTER AU PANIER ==========
+        function goToCheckout() {
+            // Scroll vers le formulaire de commande
+            const checkoutSection = document.getElementById('commande');
+            if (checkoutSection) {
+                checkoutSection.scrollIntoView({ behavior: 'smooth' });
+                // Focus sur le premier champ du formulaire après un court délai
+                setTimeout(() => {
+                    document.getElementById('firstName').focus();
+                }, 500);
+            }
+        }
+
+        // Connecter tous les boutons "Acheter maintenant" et "Ajouter au panier"
+        document.querySelectorAll('.cta-button, .add-to-cart').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                goToCheckout();
+            });
+        });
+
+        // ========== FORMULAIRE DE COMMANDE ==========
+        const checkoutForm = document.getElementById('checkoutForm');
+
+        // Validation en temps réel des champs
+        const formFields = {
+            firstName: { element: document.getElementById('firstName'), errorId: 'errorFirstName', message: 'Veuillez entrer votre prénom' },
+            lastName: { element: document.getElementById('lastName'), errorId: 'errorLastName', message: 'Veuillez entrer votre nom' },
+            email: { element: document.getElementById('email'), errorId: 'errorEmail', message: 'Veuillez entrer un email valide' },
+            phone: { element: document.getElementById('phone'), errorId: 'errorPhone', message: 'Veuillez entrer un numéro de téléphone' },
+            address: { element: document.getElementById('address'), errorId: 'errorAddress', message: 'Veuillez entrer votre adresse complète' },
+            city: { element: document.getElementById('city'), errorId: 'errorCity', message: 'Veuillez sélectionner une wilaya' }
+        };
+
+        // Ajouter les écouteurs pour la validation en temps réel
+        Object.values(formFields).forEach(field => {
+            field.element.addEventListener('blur', () => validateField(field.element));
+            field.element.addEventListener('input', () => {
+                if (field.element.value.trim()) {
+                    clearError(field.errorId);
+                }
+            });
+        });
+
+        function validateField(field) {
+            const value = field.value.trim();
+            let isValid = false;
+
+            if (field.id === 'email') {
+                isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+            } else if (field.id === 'phone') {
+                isValid = /^\+?213\s?\d{9}$|^\d{10}$/.test(value.replace(/\s/g, ''));
+            } else {
+                isValid = value.length > 0;
+            }
+
+            const fieldData = Object.values(formFields).find(f => f.element === field);
+            if (!isValid && fieldData) {
+                showError(fieldData.errorId, fieldData.message);
+            } else if (fieldData) {
+                clearError(fieldData.errorId);
+            }
+
+            return isValid;
+        }
+
+        function showError(errorId, message) {
+            const errorElement = document.getElementById(errorId);
+            if (errorElement) {
+                errorElement.textContent = message;
+                errorElement.classList.add('show');
+            }
+        }
+
+        function clearError(errorId) {
+            const errorElement = document.getElementById(errorId);
+            if (errorElement) {
+                errorElement.textContent = '';
+                errorElement.classList.remove('show');
+            }
+        }
+
+        // Soumission du formulaire
+        checkoutForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Valider tous les champs
+            let isFormValid = true;
+            Object.values(formFields).forEach(field => {
+                if (!validateField(field.element)) {
+                    isFormValid = false;
+                }
+            });
+
+            // Vérifier les conditions d'acceptation
+            if (!document.getElementById('terms').checked) {
+                alert('Veuillez accepter les conditions d\'utilisation');
+                isFormValid = false;
+            }
+
+            if (!isFormValid) {
+                return;
+            }
+
+            // Collecter les données du formulaire
+            const formData = {
+                firstName: document.getElementById('firstName').value.trim(),
+                lastName: document.getElementById('lastName').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                address: document.getElementById('address').value.trim(),
+                city: document.getElementById('city').value,
+                zipcode: document.getElementById('zipcode').value.trim(),
+                payment: document.querySelector('input[name="payment"]:checked').value,
+                notes: document.getElementById('notes').value.trim(),
+                newsletter: document.getElementById('newsletter').checked,
+                product: 'Collier Cœur Doré en acier inoxydable',
+                price: '2 790 DZD',
+                date: new Date().toLocaleString('fr-FR')
+            };
+
+            // Afficher les données de la commande en console (pour debug)
+            console.log('📋 Commande soumise:', formData);
+
+            // Désactiver le bouton pendant l'envoi
+            const submitBtn = checkoutForm.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Envoi en cours...';
+
+            // ========== ENVOYER AU SERVEUR ==========
+            fetch('process-order.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Afficher le message de succès
+                    const successMessage = document.getElementById('successMessage');
+                    successMessage.innerHTML = `✓ Commande reçue avec succès! Numéro: <strong>${data.order_id}</strong><br>Un email de confirmation a été envoyé à ${formData.email}`;
+                    successMessage.classList.add('show');
+
+                    // Réinitialiser le formulaire
+                    checkoutForm.reset();
+                    
+                    // Vider le localStorage
+                    localStorage.removeItem('checkoutFormData');
+
+                    // Masquer le message après 8 secondes et scroll vers le top
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 8000);
+                } else {
+                    // Afficher l'erreur
+                    alert('❌ Erreur: ' + (data.message || 'Une erreur est survenue'));
+                }
+                
+                // Réactiver le bouton
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            })
+            .catch(error => {
+                console.error('Erreur réseau:', error);
+                alert('❌ Erreur de connexion. Veuillez vérifier votre connexion internet.');
+                
+                // Réactiver le bouton
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            });
+        });
+
+        // ========== FORMATAGE TÉLÉPHONE ==========
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            // Limiter à 10 chiffres pour l'Algérie
+            if (value.length > 10) {
+                value = value.slice(0, 10);
+            }
+            
+            // Formater : XXX XX XX XX
+            if (value.length >= 6) {
+                value = value.slice(0, 3) + ' ' + value.slice(3, 5) + ' ' + value.slice(5, 7) + ' ' + value.slice(7);
+            } else if (value.length >= 3) {
+                value = value.slice(0, 3) + ' ' + value.slice(3);
+            }
+            
+            e.target.value = value;
+        });
+
+        // ========== SAUVEGARDE AUTO DU FORMULAIRE ==========
+        // Sauvegarder les données du formulaire dans le localStorage
+        checkoutForm.addEventListener('change', function() {
+            const formData = new FormData(checkoutForm);
+            const data = Object.fromEntries(formData);
+            localStorage.setItem('checkoutFormData', JSON.stringify(data));
+        });
+
+        // Charger les données sauvegardées au chargement de la page
+        window.addEventListener('load', function() {
+            const savedData = localStorage.getItem('checkoutFormData');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                Object.keys(data).forEach(key => {
+                    const field = document.querySelector(`[name="${key}"]`);
+                    if (field) {
+                        if (field.type === 'checkbox') {
+                            field.checked = data[key] === 'on';
+                        } else {
+                            field.value = data[key];
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
